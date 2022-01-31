@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="startQuiz()">
+
+    <section class="mainBox">
+        
+        <section class="quizBox">
+
+            <div class="header">
+
+                <span>Fatima Shahid</span>
+                <div id="timer">
+
+                    <span id="min">5</span>
+                 <span id="">:</span>
+                <span id="sec">00</span> 
+            </div> 
+            </div>
+            <div class="quizBody">
+                <div>
+                    <h4 id="question"></h4>
+                </div>
+                <div>
+                    <li class="Quizoption"></li>
+                    <li class="Quizoption"></li>
+                    <li class="Quizoption"></li>
+                    <li class="Quizoption"></li>
+                </div>
+
+
+            </div>
+            <div class="footer">
+                <div>
+                    <span id="current">1</span>
+                    <span>/</span>
+                    <span id="total">6</span>
+
+                </div>
+                <div>
+                    <button id="nextBtn" onclick="nextQues()">NEXT QUES</button>
+                </div>
+
+
+            </div>
+
+
+
+        </section>
+
+
+        
+        
+    </section>
+    
+    <section id="resultBox" >
+ <div id="res">
+     <h1>Result</h1>
+ </div>
+        <div>
+            <span>Name</span>
+            <span>:</span>
+            <span>Fatima</span>
+        </div>
+
+        
+        <div>
+            <span>Total Question</span>
+            <span>:</span>
+            <span id="totalQues"></span>
+        </div>
+        
+        <div>
+            <span>Correct</span>
+            <span>:</span>
+            <span id="correctAns"></span>
+        </div>
+        
+        <div>
+            <span >Wrong</span>
+            <span >:</span>
+            <span id="wrongQues"></span>
+        </div>
+
+    </section>
+
+</body>
+<script src="app.js"></script>
+</html>
